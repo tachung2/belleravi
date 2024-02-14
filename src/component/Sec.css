@@ -1,0 +1,31 @@
+.sec {
+    position: relative;
+    padding: 200px;
+    background: #c5e4ff;
+}
+
+.sec h1 { 
+    margin-bottom: 50px;
+}
+
+.swiper {
+    margin-bottom: 150px;
+}
+
+.swiper-slide {
+    overflow: hidden;
+
+}
+
+.swiper-slide img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    color: black !important;
+    font-weight: bold;
+}
+
+

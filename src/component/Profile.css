@@ -1,0 +1,67 @@
+.profile_info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 600px;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.profile_info:hover {
+    transform: translateY(-10px);
+}
+
+.profile_info .char{
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.cover {
+    position: absolute;
+    left: -1px;
+    bottom: 40px;
+    width: 101%;
+    height: 30%;
+    
+}
+
+.bottom_cover {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(254,142,38,1) 0%, rgba(254,142,38,0) 100%);
+}
+
+
+
+.name_tag {
+    position: absolute;
+    bottom: 90px;
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    font-family: 'Cafe24Ssurround';
+}
+
+.tag_container {
+    position: absolute;
+    width: 100px;
+    bottom: 140px;
+}
+
+.tag_name {
+    position: absolute;
+    font-size: 18px;
+    bottom: 175px;
+    font-family: 'yg-jalnan';
+    color: white;
+}

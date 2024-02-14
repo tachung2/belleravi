@@ -1,0 +1,64 @@
+.pro_section {
+    width: 100%;
+    height: 100%;
+    margin-top: 74px;
+    box-shadow: inset 0px 10px 15px -10px rgba(0, 0, 0, 0.5);
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.pro_title {
+    margin-top: 70px;
+    font-size: 50px;
+    font-family: 'Cafe24Ssurround';
+    font-weight: bold;
+    animation: fadeInDown 1s ease-in-out backwards;
+}
+
+.pro_section p {
+    font-size: 18px;
+    margin-top: 30px;
+    animation: fadeInDown 2s ease-in-out backwards;
+}
+
+.product_container {
+    margin: 100px auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 150px;
+    animation: fadeInDown 1s ease-in-out backwards;
+    animation-delay: 2s;
+}
+
+.product_container a{
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 980px) {
+
+    .hero {
+        height: 400px;
+    }
+    
+    .product_container {
+        justify-content: space-around;
+    }
+}

@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+a {
+  text-decoration-line: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'yg-jalnan';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'Cafe24Ssurround';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-.App-link {
-  color: #61dafb;
+body {
+  background: #FFA447;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  word-wrap: break-word;
+  word-break: keep-all;
 }
 
-@keyframes App-logo-spin {
+html, body {
+  min-width: 480px; /* 최소 너비 설정 */
+}
+
+
+@keyframes fadeInDown {
   from {
-    transform: rotate(0deg);
+    opacity: 0; /* 시작: 완전 투명 */
+    transform: translateY(50px); /* 시작: Y축으로 20px 위에서 시작 */
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1; /* 끝: 완전 불투명 */
+    transform: translateY(0); /* 끝: 원래 위치 */
   }
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* 트랙의 배경 색상 */
+  border-radius: 6px; /* 트랙의 모서리 둥글기 */
 }
