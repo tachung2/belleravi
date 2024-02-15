@@ -30,7 +30,7 @@ function NewsDetail() {
                     <h1>{productDetail.title}</h1>
                     <div className="productDetail_description">{productDetail.description}</div>
                     <img src={productDetail.imgPath} alt="img" />
-                    <div className="productsDetail_content">{productDetail.content}</div>
+                    <div className="productsDetail_content" dangerouslySetInnerHTML={{ __html: productDetail.content }}></div>
                 </div>
             </div>
         </div>

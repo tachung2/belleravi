@@ -38,7 +38,7 @@ function NewsDetail() {
                     <div className="newsDetail_tag">{newsDetail.tag}</div>
                     <img src={newsDetail.imgPath} alt="img" />
                     <p>{formattedDate}</p>
-                    <div className="newsDetail_content">{newsDetail.content}</div>
+                    <div className="newsDetail_content" dangerouslySetInnerHTML={{ __html: newsDetail.content }}></div>
                 </div>
             </div>
         </div>
