@@ -8,7 +8,7 @@ function Product() {
 
     useEffect(() => {
         // GET 요청을 보낼 API 주소
-        const apiUrl = 'https://belleravi.co.kr/api/productlist';
+        const apiUrl = 'http://belleravi.co.kr/api/productlist';
 
         // fetch를 사용하여 GET 요청 보내기
         fetch(apiUrl)
