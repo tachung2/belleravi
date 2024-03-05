@@ -10,7 +10,7 @@ function Sec() {
 
     useEffect(() => {
         // GET 요청을 보낼 API 주소
-        const apiUrl = 'https://port-0-belleravihomeapi-1gksli2alpurg9zr.sel4.cloudtype.app/api/newslist';
+        const apiUrl = 'http://belleravi.co.kr/api/newslist';
     
         // fetch를 사용하여 GET 요청 보내기
         fetch(apiUrl)
@@ -24,7 +24,7 @@ function Sec() {
 
       useEffect(() => {
         // GET 요청을 보낼 API 주소
-        const apiUrl = 'https://port-0-belleravihomeapi-1gksli2alpurg9zr.sel4.cloudtype.app/api/productlist';
+        const apiUrl = 'http://belleravi.co.kr/api/productlist';
     
         // fetch를 사용하여 GET 요청 보내기
         fetch(apiUrl)
